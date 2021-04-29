@@ -1,0 +1,46 @@
+.roleTag {
+  cursor: pointer;
+  padding: 5px 13px;
+}
+
+.page-title {
+  color: #1363a4;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: bold;
+  font-family: ui-rounded;
+}
+
+.main-page .logo {
+  height: 57px;
+  margin: 16px;
+  margin-bottom: 39px;
+  background: rgba(255, 255, 255, 0.3);
+  background-image: url(https://cdn.bookingcare.vn/fr/w300/2020/11/23/224611-dna-strand-33015681280.jpg);
+  background-size: cover;
+  background-position-y: -14px;
+  border-radius: 4px;
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+}
+
+.myTestingResults {
+  margin-top: 30px;
+  background-color: #f2f7fb;
+  padding: 19px;
+  border-radius: 7px;
+
+  >.ant-col >.ant-row {
+    margin-bottom: 20px;
+  }
+}
+
+.result_detail {
+  margin-top: 20px;
+
+  >.ant-col >.ant-row {
+    margin-bottom: 20px;
+  }
+}

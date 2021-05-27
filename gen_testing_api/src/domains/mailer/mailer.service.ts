@@ -52,7 +52,7 @@ export class MailerService {
       });
 
       const mailOptions = {
-        from: 'hoangtuanle2021@gmail.com',
+        from: 'tranhuuhongson@gmail.com',
         to: user.email,
         subject: 'Thông báo kết quả xet nghiệm',
         html,

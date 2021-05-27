@@ -28,7 +28,12 @@ export const patientTestingResultUpdateAction = (payload: any) => {
         type: PATIENT_TESTING_RESULT_UPDATE_SUCCESS,
         payload: { data }
       });
-      payload.history.push(`/patients/${payload.patientId}/detail`);
+      payload.history.push(`/patients/${payload.patientId}/testing_results/payload.testingResultId`);
+
+      notification.open({
+        message: 'Thông báo',
+        description: 'Cập nhật kết quả thành công'
+      })
     } catch (error) {
       dispatch({
         type: PATIENT_TESTING_RESULT_UPDATE_FAILURE,

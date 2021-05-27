@@ -1,4 +1,4 @@
-import { Breadcrumb, Form, Input, Button, Row, Col } from 'antd';
+import { Breadcrumb, Form, Input, Button, Row, Col, Divider } from 'antd';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useHistory, useParams } from 'react-router-dom';
@@ -41,6 +41,7 @@ export const MyTestingResults = () => {
           data?.testResult?.map((result: any) => {
             return (
               <>
+              <Divider />
                 <Descriptions bordered>
                   <Descriptions.Item label="Tên xét nghiệm">{result.name}</Descriptions.Item>
                   <Descriptions.Item span={3} label="Mô tả" >{result.description}</Descriptions.Item>
@@ -92,6 +93,8 @@ export const MyTestingResults = () => {
                     }
                   </Descriptions>
                 </Row>
+
+
               </>
             )
           })

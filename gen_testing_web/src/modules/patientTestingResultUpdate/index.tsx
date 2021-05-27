@@ -4,6 +4,7 @@ import { Link, useHistory, useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { patientTestingResultUpdateAction, findOneGenTesting } from './action';
 import { useEffect } from 'react';
+import TextArea from 'antd/lib/input/TextArea';
 
 const { Option } = Select;
 
@@ -69,8 +70,15 @@ export const PatientTestingResultUpdate = () => {
           name='name'
           rules={[{ required: true, message: 'Vui lòng nhập tên xét nghiệm' }]}
         >
-          <Input placeholder='Nhập tên xet nghiệm' />
+          <Input placeholder='Nhập tên xet nghiệm' readOnly />
         </Form.Item>
+        <Form.Item
+          name='description'
+          rules={[{ required: true, message: 'Vui lòng nhập mô tả' }]}
+        >
+          <TextArea rows={5} placeholder='Nhập mô tả xét nghiệm' readOnly />
+        </Form.Item>
+
         <Form.List name='results'>
           {(fields, { add, remove }) => (
             <>
@@ -160,7 +168,7 @@ export const PatientTestingResultUpdate = () => {
                         fieldKey={[fieldKey, 'name']}
                         rules={[{ required: true, message: 'Vui lòng nhập tên khuyến nghị' }]}
                       >
-                        <Input placeholder='Nhập tên gen' />
+                        <Input placeholder='Nhập tên gen'  readOnly/>
                       </Form.Item>
                       <Form.Item
                         {...restField}

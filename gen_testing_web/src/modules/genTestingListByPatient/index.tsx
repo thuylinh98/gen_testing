@@ -3,7 +3,7 @@ import { Breadcrumb, Button, Col, Row, Table } from 'antd';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useParams } from 'react-router-dom';
-import { findManyGenTestings } from './action';
+import { findManyGenTestings, findOneTestingResult } from './action';
 import moment from 'moment';
 import { EditOutlined } from '@ant-design/icons';
 
@@ -19,7 +19,7 @@ export const GenTestingListByPatient = () => {
   }, []);
 
   const onInit = () => {
-    dispatch(findManyGenTestings({ testingId: params.testingResultId }));
+    dispatch(findOneTestingResult(params?.testingResultId));
   }
 
   const columns = [

@@ -7,10 +7,10 @@ export const adminMenu = [
   {
     text: 'Quản lý xét nghiệm',
     path: '/gen_testing'
-  },
-  {
-    text: 'Quản lý gen',
-    path: '/gens'
+  // },
+  // {
+  //   text: 'Quản lý gen',
+  //   path: '/gens'
   }
 ]
 

@@ -1,12 +1,12 @@
 
 export const adminMenu = [
   {
-    text: 'Quản lý người dùng',
-    path: '/users'
-  },
-  {
     text: 'Quản lý xét nghiệm',
     path: '/gen_testing'
+  },
+  {
+    text: 'Quản lý người dùng',
+    path: '/users'
   // },
   // {
   //   text: 'Quản lý gen',
@@ -16,7 +16,7 @@ export const adminMenu = [
 
 export const doctorMenu = [
   {
-    text: 'Thử nghiệm gen',
+    text: 'Quản lý xét nghiệm',
     path: '/gen_testing'
   },
   {

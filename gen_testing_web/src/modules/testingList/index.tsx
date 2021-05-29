@@ -63,7 +63,7 @@ export const TestingList = () => {
         <Breadcrumb.Item>
           <Link to={'/gen_testing'}>Trang chủ</Link>
         </Breadcrumb.Item>
-        <Breadcrumb.Item>Thử nghiệm gen</Breadcrumb.Item>
+        <Breadcrumb.Item>Quản lý xét nghiệm</Breadcrumb.Item>
       </Breadcrumb>
       <Row style={{ marginBottom: 20 }} justify='space-between'>
         <Col span={8}>

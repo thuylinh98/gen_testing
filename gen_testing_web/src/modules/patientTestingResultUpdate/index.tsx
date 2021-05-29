@@ -58,7 +58,7 @@ export const PatientTestingResultUpdate = () => {
         <Breadcrumb.Item>
           <Link to={'/'}>Trang chủ</Link>
         </Breadcrumb.Item>
-        <Breadcrumb.Item>Cập nhật kêt quả xet nghiệm</Breadcrumb.Item>
+        <Breadcrumb.Item>Cập nhật kết quả xét nghiệm</Breadcrumb.Item>
       </Breadcrumb>
       <Form
         layout='vertical'
@@ -210,11 +210,11 @@ export const PatientTestingResultUpdate = () => {
                   <Divider />
                 </Row>
               ))}
-              <Form.Item>
+              {/* <Form.Item>
                 <Button type='dashed' onClick={() => add()} block icon={<PlusOutlined />}>
                   Thêm gen
               </Button>
-              </Form.Item>
+              </Form.Item> */}
             </>
           )}
         </Form.List>

@@ -24,7 +24,7 @@ export const UserCreate = () => {
     }));
   }
 
-  return (
+ return (
     <>
       <Breadcrumb style={{ margin: '16px 0' }}>
         <Breadcrumb.Item>
@@ -33,7 +33,7 @@ export const UserCreate = () => {
         <Breadcrumb.Item>
           <Link to={'/users'}>Người dùng</Link>
         </Breadcrumb.Item>
-        <Breadcrumb.Item>Thêm nguời dùng</Breadcrumb.Item>
+        <Breadcrumb.Item>Thêm người dùng</Breadcrumb.Item>
       </Breadcrumb>
       <Form
         name='normal_login'
@@ -97,6 +97,7 @@ export const UserCreate = () => {
         >
           <Select
             options={[
+              { label: 'Quản trị viên', value: 'ADMIN' },
               { label: 'Bác sĩ', value: 'DOCTOR' },
               { label: 'Bệnh nhân', value: 'PATIENT' },
             ]}

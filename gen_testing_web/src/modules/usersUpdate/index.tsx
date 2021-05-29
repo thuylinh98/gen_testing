@@ -42,7 +42,7 @@ export const UserUpdate = () => {
           <Link to={'/users'}>Người dùng</Link>
         </Breadcrumb.Item>
         <Breadcrumb.Item>
-          Sửa nguời dùng
+          Sửa người dùng
         </Breadcrumb.Item>
       </Breadcrumb>
       <Form

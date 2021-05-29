@@ -46,7 +46,7 @@ export const PatientDetail = () => {
       render: (text: string, record: any, index: any): any => {
         return (
           <>
-            <Button type='primary' onClick={sendMailToPatient}>Gởi mail</Button> |
+            <Button type='primary' onClick={sendMailToPatient}>Gửi mail</Button> |
             <Link to={`/patients/${params.id}/testing_results/${record._id}/list`}>
               Cập nhật kết quả
             </Link>

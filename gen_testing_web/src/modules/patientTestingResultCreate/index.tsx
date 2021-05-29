@@ -67,7 +67,7 @@ export const PatientTestingResultCreate = () => {
         </Form.Item>
         <Form.Item>
           <Button loading={isLoading} type='primary' htmlType='submit' className='login-form-button'>
-            Tạo xét nghiệm
+            Thêm xét nghiệm
           </Button>
         </Form.Item>
       </Form>

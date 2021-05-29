@@ -26,7 +26,7 @@ export const MyTestingResults = () => {
         <Breadcrumb.Item>
           <Link to={'/gen_testing'}>Trang chủ</Link>
         </Breadcrumb.Item>
-        <Breadcrumb.Item>Kết quả thử xét nghiêm</Breadcrumb.Item>
+        <Breadcrumb.Item>Kết quả thử xét nghiệm</Breadcrumb.Item>
       </Breadcrumb>
       <Row className='myTestingResults'>
         <Row>
@@ -43,7 +43,7 @@ export const MyTestingResults = () => {
               <>
               <Divider />
                 <Descriptions bordered>
-                  <Descriptions.Item label="Tên xét nghiệm">{result.name}</Descriptions.Item>
+                  <Descriptions.Item label="Tên xét nghiệm" span={3} >{result.name}</Descriptions.Item>
                   <Descriptions.Item span={3} label="Mô tả" >{result.description}</Descriptions.Item>
                 </Descriptions>
                 <Row className="result_detail">
@@ -54,9 +54,9 @@ export const MyTestingResults = () => {
                           <>
                             <Descriptions.Item label="Tên gen" >{e.name}</Descriptions.Item>
                             <Descriptions.Item label="Kiểu gen">{e.type}</Descriptions.Item>
-                            <Descriptions.Item label="Tính chất gen" >{e.property}</Descriptions.Item>
-                            <Descriptions.Item label="Ảnh hưởng">{e.affect}</Descriptions.Item>
-                            <Descriptions.Item label="Nội dung" >{e.content}</Descriptions.Item>
+                            <Descriptions.Item label="Tính chất gen" span={3}>{e.property}</Descriptions.Item>
+                            <Descriptions.Item label="Ảnh hưởng" span={3}>{e.affect}</Descriptions.Item>
+                            <Descriptions.Item label="Nội dung" span={3} >{e.content}</Descriptions.Item>
                           </>
                         )
                       })

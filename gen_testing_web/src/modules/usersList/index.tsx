@@ -16,7 +16,7 @@ export const UserList = () => {
   }, []);
 
   const onInit = () => {
-    dispatch(findManyUsers({ role: 'DOCTOR' }));
+    dispatch(findManyUsers({}));
   }
 
   const columns = [

@@ -42,7 +42,7 @@ export const PatientUpdate = () => {
           <Link to={'/users'}>Quản lý bệnh nhân</Link>
         </Breadcrumb.Item>
         <Breadcrumb.Item>
-          Sửa nguời dùng
+          Sửa người dùng
         </Breadcrumb.Item>
       </Breadcrumb>
       <Form
